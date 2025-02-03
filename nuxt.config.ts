@@ -1,17 +1,6 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
-import {resolve} from 'path';
-
 export default defineNuxtConfig({
 
-  // ssr: false,
-
-  // router: {
-  //   options: {
-  //     hashMode: true
-  //   }
-  // },
-  
-  devtools: { enabled: true },
+  devtools: { enabled: false },
 
   app: {
     pageTransition: { name: 'layout', mode: 'out-in' },
@@ -24,7 +13,7 @@ export default defineNuxtConfig({
         { name: "description", content: "موقع اميال لتاجير السيارات" },
       ],
       link: [
-        { rel: "icon", type: "image/x-icon", href: "/logo.png" },
+        { rel: "icon", type: "image/x-icon", href: "/sm-logo.svg" },
       ],
     },
   },

@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'main_font';
-  src: url('@/assets/webfonts/alfont_com_AlFont_com_URW-DIN-Arabic.ttf');
+  src: url('@/assets/webfonts/Alexandria-VariableFont_wght.ttf');
 }
 
 ::-webkit-scrollbar {
@@ -18,10 +18,7 @@
 }
 
 body {
-  // &.p-overflow-hidden {
-  //   --scrollbar-width: 0 !important;
-  //   padding: 0 !important;
-  // }
+  background-color: #f1f2f7;
   font-family: 'main_font', sans-serif, 'Font Awesome 5 Free'; /* Use the custom font as the primary font */
   &::-webkit-scrollbar {
     width: 6px;
