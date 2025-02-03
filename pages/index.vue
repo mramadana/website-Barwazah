@@ -196,7 +196,7 @@
 
                         <div class="row justify-content-center g-4">
                             <!-- Monthly Package -->
-                            <div class="col-md-6">
+                            <div class=" col-12 col-md-6 col-xl-4">
                                 <div class="package-card">
                                     <h4 class="package-title mb-5">الباقة الشهرية</h4>
                                     <ul class="package-features list-unstyled">
@@ -209,7 +209,7 @@
                                     <div class="main-price">
                                         <div class="price-tag">
                                             <span class="real-price">199</span>
-                                            <div>
+                                            <div class="d-flex align-items-center gap-2">
                                                 <span class="amount">159</span>
                                                 <span class="period">ريال / شهر</span>
 
@@ -224,7 +224,7 @@
                             </div>
 
                             <!-- Yearly Package -->
-                            <div class="col-md-6">
+                            <div class=" col-12 col-md-6 col-xl-4">
                                 <div class="package-card">
                                     <h4 class="package-title mb-5">الباقة السنوية</h4>
                                     <ul class="package-features list-unstyled">
@@ -237,9 +237,9 @@
                                     <div class="main-price">
                                         <div class="price-tag">
                                             <span class="real-price">1590</span>
-                                            <div>
+                                            <div class="d-flex align-items-center gap-2">
                                                 <span class="amount">1590</span>
-                                                <span class="period">ريال / شهر</span>
+                                                <span class="period">ريال / سنة</span>
 
                                             </div>
                                         </div>

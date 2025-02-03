@@ -52,9 +52,10 @@
     padding: 0;
     top: 8px !important;
       .dropdown-item {
-        padding: 5px 8px;
+        padding: 8px;
         font-size: 14px;
-        text-align: start;
+        text-align: center;
+        color:#013660;
         i {
           margin-inline-end: 8px;
           font-size: 17px;
@@ -77,6 +78,7 @@
       }
       &::after {
         content: "\f078";
+        display: none;
         top: 30%;
         @include dir-right(0);
         margin-left: 0;
@@ -223,6 +225,10 @@
     background: #fff;
     padding: 25px 20px;
     border-radius: 20px;
+    box-shadow: 0 0 2px rgba(20, 36, 68, 40%);
+    @media (max-width: $screen-xl) {
+      gap: 0 40px;
+    }
     @media (max-width: 1000px) {
       border-radius: 0;
       position: fixed;
@@ -260,6 +266,7 @@
       color: #013660;
       @media (max-width: 1000px) {
         color: #fff !important;
+        font-size: 14px;
       }
       &.router-link-exact-active {
         // color: var(--main);
@@ -416,6 +423,7 @@
   background: #fff;
   padding: 20px;
   border-radius: 20px;
+  box-shadow: 0 0 2px rgba(20, 36, 68, 40%);
   @media (max-width: $screen-md) {
     padding: 13px 20px;
   }
@@ -600,13 +608,12 @@
 }
 
 .packages-layout {
-  margin-bottom: 100px;
+  margin-bottom: 350px;
     padding: 80px 0;
     border-radius: 50px;
     background: linear-gradient(90deg, #E5254A 0%, #013660 100%);
     @media (max-width: $screen-xs) {
-      padding: 40px 0;
-      margin-bottom: 50px;
+      margin-bottom: 280px;
     }
     // h2, h3, p {
     //     color: #fff;
@@ -631,21 +638,24 @@
     }
     
     .package-card {
-      padding: 50px 30px;
-        background: rgba(255, 255, 255, 0.1);
+        padding: 70px 30px 30px;
+        background: #fff;
         border-radius: 30px;
         backdrop-filter: blur(10px);
         height: 100%;
-        
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        @media (max-width: $screen-xs) {
+          padding: 40px 25px 25px;
+        }
         .package-title {
-            color: #fff;
+            color: #000;
             font-size: 1.5rem;
         }
         
         .package-features {
             margin: 30px 0;
             li {
-                color: #fff;
+                color: #000;
                 margin-bottom: 22px;
                 font-size: 14px;
                 i {
@@ -657,7 +667,7 @@
         }
         
         .price-tag {
-            color: #fff;
+            color: #E90C36;
             margin: 20px 0;
             .amount {
                 font-size: 2.5rem;
@@ -776,4 +786,12 @@
   padding: 40px 15px;
   background-color: #fff;
   border-radius: 20px;
+}
+
+.pricing-section {
+  margin-bottom: -300px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }

@@ -17,10 +17,10 @@
                 <div class="footer-section">
                     <h3>روابط</h3>
                     <ul>
-                        <li><NuxtLink to="/assistant">المساعد التسويقي</NuxtLink></li>
-                        <li><NuxtLink to="/services">الخدمات</NuxtLink></li>
-                        <li><NuxtLink to="/products">المميزات</NuxtLink></li>
-                        <li><NuxtLink to="/packages">الباقات</NuxtLink></li>
+                        <li><NuxtLink to="#assistant">المساعد التسويقي</NuxtLink></li>
+                        <li><NuxtLink to="#Services">الخدمات</NuxtLink></li>
+                        <li><NuxtLink to="#Features">المميزات</NuxtLink></li>
+                        <li><NuxtLink to="#packages">الباقات</NuxtLink></li>
                     </ul>
                 </div>
 

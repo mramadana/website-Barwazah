@@ -48,9 +48,16 @@
 
                         <div class="left">
 
-                            <nuxt-link class="btn-login" to="/Auth/login">
-                                <img src="@/assets/images/user-img.svg" alt="user-img" class="user-img">
-                            </nuxt-link>
+                            <div class="dropdown drop-lang cursor-pointer" :class="{ 'color-lang': colorLang }">
+                                <div class="btn-login dropdown-toggle" data-bs-toggle="dropdown">
+                                    <img src="@/assets/images/user-img.svg" alt="user-img" class="user-img">
+                                </div>
+
+                                <ul class="dropdown-menu">
+                                <NuxtLink to="https://barwazah.net/" target="_blank" class="dropdown-item">تسجيل الدخول</NuxtLink>
+                                <NuxtLink to="https://barwazah.net/" target="_blank" class="dropdown-item">تسجيل حساب جديد</NuxtLink>
+                                </ul>
+                            </div>
                             <button
                                 class="nav-btn"
                                 @click="handleClick"
