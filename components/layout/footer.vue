@@ -4,30 +4,30 @@
             <div class="footer-content">
                 <!-- بروزة -->
                 <div class="footer-section">
-                    <h3>بروزة</h3>
-                    <ul>
+                    <h3 :class="['foot-title', { active: activeIndex === 0 }]" @click="handleFootTitleClick(0)">بروزة</h3>
+                    <ul class="links" :class="{ active: activeIndex === 0 }">
                         <li><NuxtLink to="/about">عن بروزة</NuxtLink></li>
-                        <li><NuxtLink to="/contact">تواصل مع الشركة</NuxtLink></li>
-                        <li><NuxtLink to="/faq">الشكاوى والمقترحات</NuxtLink></li>
+                        <li><NuxtLink to="">تواصل مع الشركة</NuxtLink></li>
+                        <li><NuxtLink to="">الشكاوى والمقترحات</NuxtLink></li>
                         <li><NuxtLink to="/privacy">سياسة الخصوصية</NuxtLink></li>
                     </ul>
                 </div>
 
                 <!-- روابط -->
                 <div class="footer-section">
-                    <h3>روابط</h3>
-                    <ul>
-                        <li><NuxtLink to="#assistant">المساعد التسويقي</NuxtLink></li>
-                        <li><NuxtLink to="#Services">الخدمات</NuxtLink></li>
-                        <li><NuxtLink to="#Features">المميزات</NuxtLink></li>
-                        <li><NuxtLink to="#packages">الباقات</NuxtLink></li>
+                    <h3 :class="['foot-title', { active: activeIndex === 1 }]" @click="handleFootTitleClick(1)">روابط</h3>
+                    <ul class="links" :class="{ active: activeIndex === 1 }">
+                        <li><NuxtLink to="/#assistant">المساعد التسويقي</NuxtLink></li>
+                        <li><NuxtLink to="/#Services">الخدمات</NuxtLink></li>
+                        <li><NuxtLink to="/#Features">المميزات</NuxtLink></li>
+                        <li><NuxtLink to="/#packages">الباقات</NuxtLink></li>
                     </ul>
                 </div>
 
                 <!-- اربط متجرك الآن -->
                 <div class="footer-section">
                     <h3>اربط متجرك الآن</h3>
-                    <div class="section-btns">
+                    <div class="section-btns align-items-start">
                         <button class="typeSection salla" @click="() => { navigateToUrl('https://salla.com/') }">
                             <img src="@/assets/images/salla.svg" alt="">
                         </button>
@@ -64,6 +64,19 @@
     const navigateToUrl = (url) => {
         window?.open(url, '_blank');
     };
+
+    const handleFootTitleClick = (index) => {
+        const windowWidth = window.innerWidth;
+        if (windowWidth <= 768) {
+        if (activeIndex.value === index) {
+            activeIndex.value = null;
+        } else {
+            activeIndex.value = index;
+        }
+        }
+    };
+
+  const activeIndex = ref(null);
 </script>
 
 <style lang="scss" scoped>

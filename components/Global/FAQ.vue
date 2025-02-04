@@ -4,7 +4,7 @@
         <h4 class="main-title mb-5 md text-center">أكتشف المزيد حول خدمات بروزة وكيفية تحقيق أقصى استفادة منها</h4>
         <div class="row accordion accordion-flush justify-content-center mt-5" id="accordionFlushExample">
             <div class="col-12 col-md-10 mb-4" v-for="item in FAQ" :key="item.id">
-                <div class="layout-form chart_layout">
+                <div class="chart_layout">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" :data-bs-target="'#flush-collapseOne' + item.id" aria-expanded="false" :aria-controls="'flush-collapseOne' + item.id">

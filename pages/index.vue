@@ -26,7 +26,7 @@
                             <img src="@/assets/images/chat-img.svg" alt="Chat Image" class="img-fluid">
                         </div>
                         <div class="suggestions-text">
-                            <h2 class="text-danger fw-bold mb-4">بروزه تجاوبك... <br> وتقترح لك الأفضل</h2>
+                            <h2 class="text-danger fw-bold mb-5">بروزه تجاوبك... <br> وتقترح لك الأفضل</h2>
                             <p>عندك استفسار عن أداء متجرك أو ودك تعرف أفضل توقيت لإطلاق عرض جديد أو ترقية لرفع مبيعاتك. <br> اسأل بروزة! ولاة تجاوبك بروزة مو مجرد ذكاء تقليدي بل مساعد تسويقي مبني على معرفة عميقة بالتحليلات الذكية لبيانات متجرك واقتراحات فعّالة لقرارات تسويقية مثمرة وزيادة في الأرباح.</p>
                         </div>
                     </div>
@@ -41,73 +41,89 @@
 
                             <!-- Feature 4 -->
                             <div class="col-md-6 col-lg-3">
-                                <div class="feature-card text-center p-4">
-                                    <img src="@/assets/images/feature1.svg" alt="تحليل متكامل" class="mb-4">
-                                    <h5 class="main-cl mb-3">تحليل متكامل لمتجرك الإلكتروني</h5>
-                                    <p class="text-muted small">دراسة متجرك الإلكتروني بشكل شامل وتحليل عوامل التحسين وتحليل المنافسين وتطوير السوق لأفضل النتائج لمبيعات مستهدفة</p>
+                                <div class="feature-card">
+                                    <img src="@/assets/images/icon.svg" alt="تحليل متكامل" class="mb-4">
+                                    <div class="text-center p-3">
+                                        <h5 class="main-cl mb-3">تحليل متكامل لمتجرك الإلكتروني</h5>
+                                        <p class="text-muted small">دراسة متجرك الإلكتروني بشكل شامل وتحليل عوامل التحسين وتحليل المنافسين وتطوير السوق لأفضل النتائج لمبيعات مستهدفة</p>
+                                    </div>
                                 </div>
                             </div>
 
                             <!-- Feature 1 -->
                             <div class="col-md-6 col-lg-3">
-                                <div class="feature-card text-center p-4">
-                                    <img src="@/assets/images/feature1.svg" alt="تحليل منافسين" class="mb-4">
-                                    <h5 class="main-cl mb-3">تحليل منافسين دقيق</h5>
-                                    <p class="text-muted small">ساعدك على تحديد نقاط تميزك المحتملة منافسيك وتحليل وتطوير والحصول على أفضل النتائج السوقية والمبنية على بيانات دقيقة وأفكار تحليلية ذكية</p>
+                                <div class="feature-card">
+                                    <img src="@/assets/images/icon-2.svg" alt="تحليل منافسين" class="mb-4">
+                                    <div class="text-center p-3">
+                                        <h5 class="main-cl mb-3">تحليل منافسين دقيق</h5>
+                                        <p class="text-muted small">ساعدك على تحديد نقاط تميزك المحتملة منافسيك وتحليل وتطوير والحصول على أفضل النتائج السوقية والمبنية على بيانات دقيقة وأفكار تحليلية ذكية</p>
+                                    </div>
                                 </div>
                             </div>
 
                             <!-- Feature 2 -->
                             <div class="col-md-6 col-lg-3">
-                                <div class="feature-card text-center p-4">
-                                    <img src="@/assets/images/feature1.svg" alt="تحليل نمو" class="mb-4">
-                                    <h5 class="main-cl mb-3">تحليل نمو أعمالك</h5>
-                                    <p class="text-muted small">تقديم رؤية واضحة لمسار النمو التسويقي والمقارنة بالمنافسين</p>
+                                <div class="feature-card">
+                                    <img src="@/assets/images/icon-3.svg" alt="تحليل نمو" class="mb-4">
+                                    <div class="text-center p-3">
+                                        <h5 class="main-cl mb-3">تحليل نمو أعمالك</h5>
+                                        <p class="text-muted small">تقديم رؤية واضحة لمسار النمو التسويقي والمقارنة بالمنافسين</p>
+                                    </div>
                                 </div>
                             </div>
 
                             <!-- Feature 3 -->
                             <div class="col-md-6 col-lg-3">
-                                <div class="feature-card text-center p-4">
-                                    <img src="@/assets/images/feature1.svg" alt="مساعد تسويقي" class="mb-4">
-                                    <h5 class="main-cl mb-3">مساعد تسويقي بتقنيات الذكاء الاصطناعي</h5>
-                                    <p class="text-muted small">تقنيات ذكاء اصطناعي متطورة تدربت على معلومات وممارسات تسويقية محترفة ناسب مع كل أنواع المواقع التسويقية</p>
+                                <div class="feature-card">
+                                    <img src="@/assets/images/icon-4.svg" alt="مساعد تسويقي" class="mb-4">
+                                    <div class="text-center p-3">
+                                        <h5 class="main-cl mb-3">مساعد تسويقي بتقنيات الذكاء الاصطناعي</h5>
+                                        <p class="text-muted small">تقنيات ذكاء اصطناعي متطورة تدربت على معلومات وممارسات تسويقية محترفة ناسب مع كل أنواع المواقع التسويقية</p>
+                                    </div>
                                 </div>
                             </div>
 
                             <!-- Feature 8 -->
                             <div class="col-md-6 col-lg-3">
-                                <div class="feature-card text-center p-4">
-                                    <img src="@/assets/images/feature1.svg" alt="واجهة سهلة" class="mb-4">
-                                    <h5 class="main-cl mb-3">واجهة بسيطة سهلة الاستخدام</h5>
-                                    <p class="text-muted small">أدوات وواجهات بسيطة وسهلة الاستخدام أم تعقيد وتأخير وتعطيل</p>
+                                <div class="feature-card">
+                                    <img src="@/assets/images/Conversion.svg" alt="واجهة سهلة" class="mb-4">
+                                    <div class="text-center p-3">
+                                        <h5 class="main-cl mb-3">واجهة بسيطة سهلة الاستخدام</h5>
+                                        <p class="text-muted small">أدوات وواجهات بسيطة وسهلة الاستخدام أم تعقيد وتأخير وتعطيل</p>
+                                    </div>
                                 </div>
                             </div>
 
                             <!-- Feature 7 -->
                             <div class="col-md-6 col-lg-3">
-                                <div class="feature-card text-center p-4">
-                                    <img src="@/assets/images/feature1.svg" alt="دعم مستمر" class="mb-4">
-                                    <h5 class="main-cl mb-3">دعم مستمر</h5>
-                                    <p class="text-muted small">نوفر دعم خبراء المساعدة لك في أي وقت</p>
+                                <div class="feature-card">
+                                    <img src="@/assets/images/icon-5.svg" alt="دعم مستمر" class="mb-4">
+                                    <div class="text-center p-3">
+                                        <h5 class="main-cl mb-3">دعم مستمر</h5>
+                                        <p class="text-muted small">نوفر دعم خبراء المساعدة لك في أي وقت</p>
+                                    </div>
                                 </div>
                             </div>
 
                             <!-- Feature 6 -->
                             <div class="col-md-6 col-lg-3">
-                                <div class="feature-card text-center p-4">
-                                    <img src="@/assets/images/feature1.svg" alt="خبرة تسويق" class="mb-4">
-                                    <h5 class="main-cl mb-3">خبراء تسويق</h5>
-                                    <p class="text-muted small">ساعدك في الوصول إلى نجاح تسويق تجاري</p>
+                                <div class="feature-card">
+                                    <img src="@/assets/images/icon-6.svg" alt="خبرة تسويق" class="mb-4">
+                                    <div class="text-center p-3">
+                                        <h5 class="main-cl mb-3">خبراء تسويق</h5>
+                                        <p class="text-muted small">ساعدك في الوصول إلى نجاح تسويق تجاري</p>
+                                    </div>
                                 </div>
                             </div>
 
                             <!-- Feature 5 -->
                             <div class="col-md-6 col-lg-3">
-                                <div class="feature-card text-center p-4">
-                                    <img src="@/assets/images/feature1.svg" alt="ربط متجري" class="mb-4">
-                                    <h5 class="main-cl mb-3">ربط متجرك بسهولة</h5>
-                                    <p class="text-muted small">ربط سلس وأساسي لمتجرك الإلكتروني مع متجر تطبيقات متنوع</p>
+                                <div class="feature-card">
+                                    <img src="@/assets/images/icon-7.svg" alt="ربط متجري" class="mb-4">
+                                    <div class="text-center p-3">
+                                        <h5 class="main-cl mb-3">ربط متجرك بسهولة</h5>
+                                        <p class="text-muted small">ربط سلس وأساسي لمتجرك الإلكتروني مع متجر تطبيقات متنوع</p>
+                                    </div>
                                 </div>
                             </div>
 
@@ -291,6 +307,7 @@
 
     .suggestions-text, .suggestions-image {
         max-width: 100%;
+        margin-bottom: 20px;
     }
 
     .suggestions-image {

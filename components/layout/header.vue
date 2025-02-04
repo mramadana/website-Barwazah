@@ -1,7 +1,7 @@
 <template>
     <div class="defaultLayout">
+
         <div class="container">
-            
             <header class="header" :class="headerClass">
                 <div class="nav-header">
                     <div class="inner">
@@ -16,31 +16,31 @@
                             :class="{ active: navLinksActive }"
                         >
                             <li>
-                                <NuxtLink to="#banner" class="link">
+                                <NuxtLink to="/#banner" class="link">
                                     {{ $t("Home.home") }}
                                 </NuxtLink>
                             </li>
 
                             <li>
-                                <NuxtLink to="#assistant" class="link">
+                                <NuxtLink to="/#assistant" class="link">
                                     المساعد التسويقي
                                 </NuxtLink>
                             </li>
 
                             <li>
-                                <NuxtLink to="#Features" class="link">
+                                <NuxtLink to="/#Features" class="link">
                                     المميزات
                                 </NuxtLink>
                             </li>
 
                             <li>
-                                <NuxtLink to="#Services" class="link">
+                                <NuxtLink to="/#Services" class="link">
                                     الخدمات
                                 </NuxtLink>
                             </li>
 
                             <li>
-                                <NuxtLink to="#packages" class="link">
+                                <NuxtLink to="/#packages" class="link">
                                     الباقات
                                 </NuxtLink>
                             </li>
@@ -55,7 +55,7 @@
 
                                 <ul class="dropdown-menu">
                                 <NuxtLink to="https://barwazah.net/" target="_blank" class="dropdown-item">تسجيل الدخول</NuxtLink>
-                                <NuxtLink to="https://barwazah.net/" target="_blank" class="dropdown-item">تسجيل حساب جديد</NuxtLink>
+                                <button type="button" @click="signUp_dialog = true" class="dropdown-item">تسجيل حساب جديد</button>
                                 </ul>
                             </div>
                             <button
@@ -76,69 +76,54 @@
             </header>
         </div>
 
+        <!-- dialog for check if it Salla or zid -->
+
+        <Dialog v-model:visible="signUp_dialog" modal class="custum_dialog_width auth-daialog"
+            :draggable="false">
+            <div class="text-center">
+                <h5 class="main-title sm blue mb-4"> اختر المنصة التي ترغب في ربط متجرك بها عبر تطبيق بروزه من خلال سوق تطبيقات سلة وزد.</h5>
+                <div class="section-btns mt-4 mb-4">
+                  
+                    <button @click="() => { navigateToUrl('https://salla.com/'); signUp_dialog = false; }" class="typeSection salla">
+                        <img src="@/assets/images/salla.svg" alt="">
+                    </button>
+
+                    <button @click="() => { navigateToUrl('https://zid.sa/'); signUp_dialog = false; }" class="typeSection zid">
+                        <img src="@/assets/images/zid.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </Dialog>
+
     </div>
 </template>
 
-<script>
+<script setup>
+    import { useRoute } from 'vue-router';
 
-export default {
-    data() {
-        return {
-            htmlLang: "",
-            navBtnActive: false,
-            navLinksActive: false,
-            navOverlayShow: false,
-            isActive: false,
-        };
-    },
+    const signUp_dialog = ref(false);
+    const navBtnActive = ref(false);
+    const navLinksActive = ref(false);
+    const navOverlayShow = ref(false);
+    const isActive = ref(false);
 
-    methods: {
+    const handleClick = () => {
+        navBtnActive.value = true;
+        navLinksActive.value = true;
+        navOverlayShow.value = true;
+    };
 
-        handleClick() {
-            this.navBtnActive = true;
-            this.navLinksActive = true;
-            this.navOverlayShow = true;
-        },
+    const handleOverlayClick = () => {
+        navBtnActive.value = false;
+        navLinksActive.value = false;
+        navOverlayShow.value = false;
+    };
 
-        handleOverlayClick() {
-            this.navBtnActive = false;
-            this.navLinksActive = false;
-            this.navOverlayShow = false;
-        },
-    },
-
-    watch: {
-    // Watch for changes in the route
-    
-    $route(to, from) {
-      // Handle the event here
-      console.log("Route changed:", to, from);
-      this.handleOverlayClick();
-    },
-  },
-
-    async mounted() {
-        let sessionKey = localStorage.getItem("locale");
-
-        window.sessionKey = localStorage.getItem("locale");
-        if (sessionKey) {
-            this.chageDir(localStorage.getItem("locale"));
-        }
-    },
-
-    computed: {
-        headerClass() {
-            return {
-                "add-margin": this.shouldAddMarginBottom,
-            };
-        },
-        shouldAddMarginBottom() {
-            // Check if the current route is not the home page
-            console.log("updated is Done");
-            return this.$route.path !=="/";
-        },
-    },
-};
+    const route = useRoute();
+    watch(route, (to, from) => {
+        console.log("Route changed:", to, from);
+        handleOverlayClick();
+    });
 </script>
 
 <style lang="scss">
@@ -150,4 +135,21 @@ export default {
     top: 0;
     z-index: 1000;
 }
+
+.typeSection {
+        padding: 20px;
+        border-radius: 10px;
+        width: 133px;
+        height: 54px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.salla {
+            background-color: #004956;
+        }
+        &.zid {
+            background-color: #802BE7;
+        }
+    }
 </style>
