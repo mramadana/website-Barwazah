@@ -105,7 +105,6 @@
     const navBtnActive = ref(false);
     const navLinksActive = ref(false);
     const navOverlayShow = ref(false);
-    const isActive = ref(false);
 
     const handleClick = () => {
         navBtnActive.value = true;
@@ -124,6 +123,10 @@
         console.log("Route changed:", to, from);
         handleOverlayClick();
     });
+
+    const navigateToUrl = (url) => {
+        window?.open(url, '_blank');
+    };
 </script>
 
 <style lang="scss">

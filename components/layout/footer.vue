@@ -40,9 +40,9 @@
 
                 <!-- Social Links -->
                 <div class="social-links">
-                    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.twitter.com" target="_blank"><img src="@/assets/images/x-twitter.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/company/barwazah/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/barwazah_sa/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/barwazah_sa" target="_blank"><img src="@/assets/images/x-twitter.svg" alt=""></a>
                 </div>
             </div>
 
